@@ -9,6 +9,9 @@
 *.userosscache
 *.sln.docstates
 
+appsettings.json
+appsettings.Development.json
+
 # Build results
 bin/
 obj/
