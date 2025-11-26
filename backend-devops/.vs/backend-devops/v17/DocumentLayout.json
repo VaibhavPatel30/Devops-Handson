@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\OneDrive - Promact Infotech Pvt Ltd\\Desktop\\Learning\\Devops Hands on\\backend-devops\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C60E953-819F-4923-9738-D53DC06DE5FF}|backend-devops.csproj|c:\\users\\admin\\onedrive - promact infotech pvt ltd\\desktop\\learning\\devops hands on\\backend-devops\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0C60E953-819F-4923-9738-D53DC06DE5FF}|backend-devops.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C60E953-819F-4923-9738-D53DC06DE5FF}|backend-devops.csproj|c:\\users\\admin\\onedrive - promact infotech pvt ltd\\desktop\\learning\\devops hands on\\backend-devops\\controllers\\hellocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C60E953-819F-4923-9738-D53DC06DE5FF}|backend-devops.csproj|solutionrelative:controllers\\hellocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C60E953-819F-4923-9738-D53DC06DE5FF}|backend-devops.csproj|c:\\users\\admin\\onedrive - promact infotech pvt ltd\\desktop\\learning\\devops hands on\\backend-devops\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0C60E953-819F-4923-9738-D53DC06DE5FF}|backend-devops.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C60E953-819F-4923-9738-D53DC06DE5FF}|backend-devops.csproj|c:\\users\\admin\\onedrive - promact infotech pvt ltd\\desktop\\learning\\devops hands on\\backend-devops\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C60E953-819F-4923-9738-D53DC06DE5FF}|backend-devops.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive - Promact Infotech Pvt Ltd\\Desktop\\Learning\\Devops Hands on\\backend-devops\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\admin\\OneDrive - Promact Infotech Pvt Ltd\\Desktop\\Learning\\Devops Hands on\\backend-devops\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-26T07:43:12.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive - Promact Infotech Pvt Ltd\\Desktop\\Learning\\Devops Hands on\\backend-devops\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\admin\\OneDrive - Promact Infotech Pvt Ltd\\Desktop\\Learning\\Devops Hands on\\backend-devops\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-26T06:44:33.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive - Promact Infotech Pvt Ltd\\Desktop\\Learning\\Devops Hands on\\backend-devops\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive - Promact Infotech Pvt Ltd\\Desktop\\Learning\\Devops Hands on\\backend-devops\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T06:33:01.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HelloController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\OneDrive - Promact Infotech Pvt Ltd\\Desktop\\Learning\\Devops Hands on\\backend-devops\\Controllers\\HelloController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HelloController.cs",
+              "ToolTip": "C:\\Users\\admin\\OneDrive - Promact Infotech Pvt Ltd\\Desktop\\Learning\\Devops Hands on\\backend-devops\\Controllers\\HelloController.cs",
+              "RelativeToolTip": "Controllers\\HelloController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T06:30:53.565Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

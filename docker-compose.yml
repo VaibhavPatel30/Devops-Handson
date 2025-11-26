@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+  backend:
+    image: backend-devops
+    build:
+      context: ./backend-devops
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "8081:8080"
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=dpg-d4jaufchg0os73bm4g40-a.singapore-postgres.render.com;Port=5432;Database=dbdevops_rsbr;Username=dbdevops_rsbr_user;Password=VMBD1FWKYV9UlFxyyuZCd2OCh32zyYRQ"
+    restart: always
+  
+  frontend:
+    image: frontend-devops
+    build:
+      context: ./frontend-devops
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "8080:80"
+    restart: always
