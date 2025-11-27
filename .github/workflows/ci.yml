@@ -37,6 +37,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Create .env file dynamically
+        run: |
+          echo "DOCKERHUB_USERNAME=${{ secrets.DOCKERHUB_USERNAME }}" > .env
+          echo "DB_CONNECTION=${{ secrets.DB_CONNECTION }}" >> .env
+
       - name: Copy docker-compose + env to EC2
         uses: appleboy/scp-action@v0.1.4
         with:
