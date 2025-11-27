@@ -29,39 +29,39 @@ jobs:
       - name: Push images
         run: docker compose push
   
-  # deploy_to_ec2:
-  #   needs: build_and_push
-  #   runs-on: ubuntu-latest
+  deploy_to_ec2:
+    needs: build_and_push
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v3
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-  #     - name: Create .env file dynamically
-  #       run: |
-  #         echo "DOCKERHUB_USERNAME=${{ secrets.DOCKERHUB_USERNAME }}" > .env
-  #         echo "DB_CONNECTION=${{ secrets.DB_CONNECTION }}" >> .env
+      - name: Create .env file dynamically
+        run: |
+          echo "DOCKERHUB_USERNAME=${{ secrets.DOCKERHUB_USERNAME }}" > .env
+          echo "DB_CONNECTION=${{ secrets.DB_CONNECTION }}" >> .env
 
-  #     - name: Copy docker-compose + env to EC2
-  #       uses: appleboy/scp-action@v0.1.4
-  #       with:
-  #         host: 18.212.204.247
-  #         username: ${{ secrets.EC2_USER }}
-  #         key: ${{ secrets.EC2_SSH_KEY }}
-  #         source: "docker-compose.yml,.env"
-  #         target: "/home/ubuntu/app"
+      - name: Copy docker-compose + env to EC2
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: 18.212.204.247
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          source: "docker-compose.yml, .env"
+          target: "/home/ubuntu/app"
 
-  #     - name: Deploy on EC2
-  #       uses: appleboy/ssh-action@v0.1.10
-  #       with:
-  #         host: 18.212.204.247
-  #         username: ${{ secrets.EC2_USER }}
-  #         key: ${{ secrets.EC2_SSH_KEY }}
-  #         script: |
-  #           << 'EOF'
-  #           cd /home/ubuntu/app
-  #           docker compose pull
-  #           docker compose down
-  #           docker compose up -d
-  #           docker system prune -f
-  #           EOF
+      - name: Deploy on EC2
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: 18.212.204.247
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            << 'EOF'
+            cd /home/ubuntu/app
+            docker compose pull
+            docker compose down
+            docker compose up -d
+            docker system prune -f
+            EOF
