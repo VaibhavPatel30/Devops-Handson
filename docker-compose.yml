@@ -19,7 +19,7 @@ services:
       context: ./frontend-devops
       dockerfile: Dockerfile
       args:
-        VITE_API_URL: http://34.233.119.93:8081
+        VITE_API_URL: http://54.221.96.169:8081
     container_name: frontend
     ports:
       - "8080:80"
