@@ -3,9 +3,6 @@ version: "3.9"
 services:
   backend:
     image: ${DOCKERHUB_USERNAME}/backend-devops:latest
-    build:
-      context: ./backend-devops
-      dockerfile: Dockerfile
     container_name: backend
     ports:
       - "8081:8080"
@@ -15,12 +12,9 @@ services:
   
   frontend:
     image: ${DOCKERHUB_USERNAME}/frontend-devops:latest
-    build:
-      context: ./frontend-devops
-      dockerfile: Dockerfile
-      args:
-        VITE_API_URL: http://18.212.204.247:8081
     container_name: frontend
     ports:
       - "8080:80"
+    environment:
+      VITE_API_URL: http://18.212.204.247:8081
     restart: always
