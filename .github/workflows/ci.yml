@@ -20,9 +20,17 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Export DockerHub username as env
-        run: echo "DOCKERHUB_USERNAME=${{ secrets.DOCKERHUB_USERNAME }}" >> $GITHUB_ENV
+      # 🔥 CREATE .env BEFORE BUILD
+      - name: Create .env for build
+        run: |
+          echo "DOCKERHUB_USERNAME=${{ secrets.DOCKERHUB_USERNAME }}" > .env
+          echo "DB_CONNECTION=${{ secrets.DB_CONNECTION }}" >> .env
 
+      # 🔥 ENSURE .env EXISTS
+      - name: Verify env file
+        run: cat .env
+
+      # 🔥 BUILD WITH NO CACHE IN SAME DIR
       - name: Build images using docker-compose
         run: docker compose build --no-cache
 
@@ -37,6 +45,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      # 🔥 CREATE .env AGAIN FOR DEPLOY
       - name: Create .env file dynamically
         run: |
           echo "DOCKERHUB_USERNAME=${{ secrets.DOCKERHUB_USERNAME }}" > .env
