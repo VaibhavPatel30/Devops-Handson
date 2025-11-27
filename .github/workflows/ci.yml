@@ -24,7 +24,7 @@ jobs:
         run: echo "DOCKERHUB_USERNAME=${{ secrets.DOCKERHUB_USERNAME }}" >> $GITHUB_ENV
 
       - name: Build images using docker-compose
-        run: docker compose build
+        run: docker compose build --no-cache
 
       - name: Push images
         run: docker compose push
