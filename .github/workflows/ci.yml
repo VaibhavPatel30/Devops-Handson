@@ -24,7 +24,7 @@ jobs:
         run: echo "DOCKERHUB_USERNAME=${{ secrets.DOCKERHUB_USERNAME }}" >> $GITHUB_ENV
 
       - name: Build images using docker-compose
-        run: docker compose build --no-cache
+        run: docker compose build
 
       - name: Push images
         run: docker compose push
@@ -48,7 +48,7 @@ jobs:
           host: 18.212.204.247
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          source: "docker-compose.yml, .env"
+          source: "docker-compose.yml,.env"
           target: "/home/ubuntu/app"
 
       - name: Deploy on EC2
