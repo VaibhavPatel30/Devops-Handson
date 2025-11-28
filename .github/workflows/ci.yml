@@ -58,10 +58,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            << 'EOF'
             cd /home/ubuntu/app
-            docker compose pull
-            docker compose down
-            docker compose up -d
+            docker compose -f docker-compose-deploy.yml pull
+            docker compose -f docker-compose-deploy.yml up --pull always -d
             docker system prune -f
-            EOF
