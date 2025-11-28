@@ -45,7 +45,7 @@ jobs:
       - name: Copy docker-compose + env to EC2
         uses: appleboy/scp-action@v0.1.4
         with:
-          host: 18.212.204.247
+          host: 3.88.87.79
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           source: "docker-compose.yml,.env"
@@ -54,7 +54,7 @@ jobs:
       - name: Deploy on EC2
         uses: appleboy/ssh-action@v0.1.10
         with:
-          host: 18.212.204.247
+          host: 3.88.87.79
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |

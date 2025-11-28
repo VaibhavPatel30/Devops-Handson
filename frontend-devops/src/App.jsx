@@ -20,7 +20,7 @@ export default function App() {
       <h1>React App</h1>
       <p>Message: {message}</p>
       <p>Frontend is working!</p>
-      <p>Code is updated!</p>
+      <p>Code is updated!: 28/11/2025</p>
     </div>
   );
 }
