@@ -56,7 +56,6 @@ export default function App() {
           </button>
         </div>
       </div>
-      <h3>Hello, Hardavi kevu lagiyu</h3>
     </div>
   );
 }
